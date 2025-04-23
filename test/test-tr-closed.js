@@ -1,0 +1,1 @@
+test('All <tr> tags are closed', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); const open = (content.match(/<tr/g) || []).length; const close = (content.match(/<\/tr>/g) || []).length; expect(open).toBe(close); });

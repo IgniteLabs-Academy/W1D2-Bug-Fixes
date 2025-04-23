@@ -1,0 +1,1 @@
+test('Footer contains a paragraph', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('<footer>') && content.includes('<p>')).toBe(true); });

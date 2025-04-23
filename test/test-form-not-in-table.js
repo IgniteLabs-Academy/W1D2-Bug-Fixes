@@ -1,0 +1,1 @@
+test('Form is not inside table', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('<form')).toBe(true); expect(content.includes('<table><form')).toBe(false); });

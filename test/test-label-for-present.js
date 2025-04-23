@@ -1,0 +1,1 @@
+test('Label has for attribute', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('<label for=')).toBe(true); });

@@ -1,0 +1,1 @@
+test('Aside has a heading', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); const hasH = /<aside>[\s\S]*<h\d>.*?<\/h\d>/.test(content); expect(hasH).toBe(true); });

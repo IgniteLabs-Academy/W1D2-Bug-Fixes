@@ -1,0 +1,1 @@
+test('DOCTYPE and meta charset present', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('<!DOCTYPE html>') && content.includes('<meta charset="UTF-8">')).toBe(true); });

@@ -1,0 +1,1 @@
+test('<li> tags are properly closed', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('</li>')).toBe(true); });

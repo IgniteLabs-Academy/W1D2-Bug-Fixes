@@ -1,0 +1,1 @@
+test('Email input uses type=email', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('type="email"')).toBe(true); });

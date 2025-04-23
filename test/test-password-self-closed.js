@@ -1,0 +1,1 @@
+test('Password input is self-closed', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('<input type="password"')).toBe(true); expect(content.includes('</input>')).toBe(false); });

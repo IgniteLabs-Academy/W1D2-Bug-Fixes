@@ -1,0 +1,1 @@
+test('Button has type=submit', () => { const content = require('fs').readFileSync('buggy-registration-form.html', 'utf8'); expect(content.includes('<button type="submit"')).toBe(true); });
